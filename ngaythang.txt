@@ -1,0 +1,93 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void main()
+{
+    int a,b,c;
+    printf("Nhap ngay sinh: ");
+    scanf("%d",&a);
+    while(a>31){
+        printf("lam deo co thang nao co %d ngay?\n",a);
+        printf("Nhap ngay sinh: ");
+        scanf("%d",&a);
+    }
+    printf("Nhap thang sinh: ");
+    scanf("%d",&b);
+    while (b>12){
+        printf(" lam deo co thang %d?\n",b);
+        printf("Nhap thang sinh: ");
+        scanf("%d",&b);
+    }
+     while (((b==4)||(b==6)||(b==9)||(b==11))&&(a==31)){
+
+        printf(" Thang %d khong co 31 ngay!\n",b);
+        printf("Nhap ngay sinh: ");
+        scanf("%d",&a);
+    while(a>31){
+        printf("lam deo co thang nao co %d ngay?\n",a);
+        printf("Nhap ngay sinh: ");
+        scanf("%d",&a);
+    }
+        printf("Nhap thang sinh: ");
+        scanf("%d",&b);
+    while (b>12){
+        printf(" lam deo co thang %d?\n",b);
+        printf("Nhap thang sinh: ");
+        scanf("%d",&b);
+    }
+            }
+
+     while ((b==2)&&(a>29)){
+
+                printf(" Thang %d lam deo co %d ngay?\n",b,a);
+            printf("Nhap ngay sinh: ");
+            scanf("%d",&a);
+    while(a>31){
+                printf("lam deo co thang nao co %d ngay?\n",a);
+                printf("Nhap ngay sinh: ");
+                scanf("%d",&a);
+    }
+            printf("Nhap thang sinh: ");
+            scanf("%d",&b);
+    while (b>12){
+                printf(" lam deo co thang %d?\n",b);
+                printf("Nhap thang sinh: ");
+                scanf("%d",&b);
+}
+     }
+    printf("Nhap nam sinh: ");
+    scanf("%d",&c);
+    while(c>2100){
+        printf("Chao mung nguoi toi tu tuong lai^^\n");
+        printf("Nhap nam sinh: ");
+        scanf("%d",&c);
+    }
+    while(c<1900){
+            int tuoi=2021-c;
+        printf("Ban that su da %d tuoi roi sao:D\n");
+        printf("Nhap nam sinh: ");
+        scanf("%d",&c);
+    }
+    while ((c%4!=0)&&(b==2)&&(a==29)){
+            printf("Nam %d thang 2 khong co 29 ngay!\n",c);
+            printf("Nhap ngay sinh: ");
+            scanf("%d",&a);
+    while(a>31){
+                printf("lam deo co thang nao co %d ngay?\n",a);
+                printf("Nhap ngay sinh: ");
+                scanf("%d",&a);
+    }
+            printf("Nhap thang sinh: ");
+            scanf("%d",&b);
+    while (b>12){
+                printf(" lam deo co thang %d?\n",b);
+                printf("Nhap thang sinh: ");
+                scanf("%d",&b);
+}
+            printf("Nhap nam sinh: ");
+            scanf("%d",&c);
+        }
+    printf("Ban sinh ngay %02d/%02d/%04d ",a,b,c);
+    return 0;
+}
